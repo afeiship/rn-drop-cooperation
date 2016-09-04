@@ -1,0 +1,3 @@
+rootProject.name = 'DropCooperation'
+
+include ':app'
