@@ -8,19 +8,23 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  NavigatorIOS,
   Text,
   View
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import baseStyles from '../assets/styles/app.base';
-
+import HomeContent from './home-content/index';
 
 export default class HomeApp extends Component {
   render(){
     return (
-      <View style={baseStyles.container}>
-        <Text>Home page!</Text>
-      </View>
+      <NavigatorIOS
+        initialRoute={{
+          title : '首页',
+          component: HomeContent
+         }}
+      />
     );
   }
 }

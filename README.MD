@@ -3,6 +3,7 @@ React native drop cooperation app. https://aixinchou.shuidihuzhu.com/
 
 ##resources:
 + http://fontawesome.io/icons/
++ https://github.com/chenbin92/React-native-example/tree/TabBarExample
 
 ## change ip solution(Check your hosts file):
 ```objective-c

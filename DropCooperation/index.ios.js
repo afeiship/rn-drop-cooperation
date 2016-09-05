@@ -12,6 +12,7 @@ import {
   TabBarIOS,
   View
 } from 'react-native';
+
 import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeApp from './views/HomeApp';
 import MyApp from './views/MyApp';
@@ -23,16 +24,6 @@ class DropCooperation extends Component {
 
   state = {
     selectedTab: 'home'
-  };
-
-  _renderContent = (page: string) => {
-    let TabAppContent;
-    switch (page) {
-      case 'home':
-        return require('./views/HomeApp');
-      case 'my':
-        return require('./views/HomeApp');
-    }
   };
 
   render() {
