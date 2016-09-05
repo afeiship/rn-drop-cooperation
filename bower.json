@@ -1,0 +1,24 @@
+{
+  "name": "rn-drop-cooperation",
+  "description": "React native drop cooperation app. https://aixinchou.shuidihuzhu.com/",
+  "main": "dist/rn-drop-cooperation.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/rn-drop-cooperation",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}
