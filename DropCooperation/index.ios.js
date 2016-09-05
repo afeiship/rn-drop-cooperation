@@ -13,6 +13,8 @@ import {
   View
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import HomeApp from './views/HomeApp';
+import MyApp from './views/MyApp';
 
 class DropCooperation extends Component {
   static title = '<TabBarIOS>';
@@ -20,18 +22,17 @@ class DropCooperation extends Component {
   static displayName = 'TabBarExample';
 
   state = {
-    selectedTab: 'redTab',
-    notifCount: 0,
-    presses: 0,
+    selectedTab: 'home'
   };
 
-  _renderContent = (color: string, pageText: string, num?: number) => {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.f20}>I am tab content!!! {pageText}</Text>
-        <Icon name="camera" size={50} color="#ddd" />
-      </View>
-    );
+  _renderContent = (page: string) => {
+    let TabAppContent;
+    switch (page) {
+      case 'home':
+        return require('./views/HomeApp');
+      case 'my':
+        return require('./views/HomeApp');
+    }
   };
 
   render() {
@@ -42,24 +43,24 @@ class DropCooperation extends Component {
         <Icon.TabBarItemIOS
           title="首页"
           iconName="home"
-          selected={this.state.selectedTab === 'blueTab'}
+          selected={this.state.selectedTab === 'home'}
           onPress={() => {
             this.setState({
-              selectedTab: 'blueTab',
+              selectedTab: 'home',
             });
         }}>
-          {this._renderContent('#414A8C', '首页页面tab')}
+          <HomeApp />
         </Icon.TabBarItemIOS>
         <Icon.TabBarItemIOS
           title="我的"
           iconName="user"
-          selected={this.state.selectedTab === 'redTab'}
+          selected={this.state.selectedTab === 'my'}
           onPress={() => {
             this.setState({
-              selectedTab: 'redTab',
+              selectedTab: 'my',
             });
         }}>
-          {this._renderContent('#414A8C', '我的页面tab')}
+          <MyApp />
         </Icon.TabBarItemIOS>
       </TabBarIOS>
     );
