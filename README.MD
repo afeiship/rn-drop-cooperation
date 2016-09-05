@@ -1,6 +1,8 @@
 #rn-drop-cooperation:
+React native drop cooperation app. https://aixinchou.shuidihuzhu.com/
 
-
+##resources:
++ http://fontawesome.io/icons/
 
 ## change ip solution(Check your hosts file):
 ```objective-c
