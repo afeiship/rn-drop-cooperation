@@ -15,14 +15,21 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 import baseStyles from '../assets/styles/app.base';
 import MyContent from './my-content/index';
-
+let styles= StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#F00'
+  }
+});
 export default class MyApp extends Component {
   render(){
     return (
       <NavigatorIOS
+        style={styles.container}
         initialRoute={{
           title : '我的中心',
-          component: MyContent
+          component: MyContent,
+          passProps:{ navigator: this }
          }}
       />
     );
