@@ -4,6 +4,7 @@ React native drop cooperation app. https://aixinchou.shuidihuzhu.com/
 ##resources:
 + http://fontawesome.io/icons/
 + https://github.com/chenbin92/React-native-example/tree/TabBarExample
++ http://blog.csdn.net/yuanguozhengjust/article/details/50556700
 
 ## change ip solution(Check your hosts file):
 ```objective-c
@@ -12,3 +13,8 @@ jsCodeLocation = [NSURL URLWithString:@"http://localhost:8081/index.ios.bundle?p
 ```
 ## hosts file:
 + 127.0.0.1 localhost
+
+##todo:
+- [ ] complete swiper for home-content.
+- [ ] complete item-template for home-content.
+- [ ] scrollview or list view form home-content.
