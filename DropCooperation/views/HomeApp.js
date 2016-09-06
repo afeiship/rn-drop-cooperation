@@ -20,7 +20,9 @@ export default class HomeApp extends Component {
   render(){
     return (
       <NavigatorIOS
-        style={baseStyles.container}
+        style={baseStyles.nav}
+        barTintColor="#0092ff"
+        titleTextColor="#FFF"
         initialRoute={{
           title : '首页',
           component: HomeContent,

@@ -5,24 +5,21 @@ import {
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#f5f5f5'
   },
   f20:{
     fontSize:20
   },
   wrapper:{
-    top:64
   },
   slide1: {
     flex: 1,
-    height:100,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#9DD6EB',
   },
   slide2: {
     flex: 1,
-    height:100,
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#97CAE5',

@@ -8,7 +8,8 @@ import React, { Component } from 'react';
 import {
   AppRegistry,
   Text,
-  View
+  View,
+  ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import styles from './styles';
@@ -16,8 +17,8 @@ import Swiper from 'react-native-swiper';
 export default class HomeContent extends Component {
   render(){
     return (
-      <View style={styles.container}>
-        <Swiper style={styles.wrapper} height={120}>
+      <ScrollView style={styles.container}>
+        <Swiper style={styles.wrapper} height={140}>
           <View style={styles.slide1}>
             <Text style={styles.text}>Hello Swiper</Text>
           </View>
@@ -28,7 +29,7 @@ export default class HomeContent extends Component {
             <Text style={styles.text}>And simple</Text>
           </View>
         </Swiper>
-      </View>
+      </ScrollView>
     );
   }
 }
