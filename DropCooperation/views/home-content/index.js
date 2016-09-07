@@ -16,15 +16,16 @@ import {
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import Slider from '../../components/slider/index';
+import HomeList from '../../components/home-list/index';
 import styles from './styles';
-import Swiper from 'react-native-swiper';
+
+
 export default class HomeContent extends Component {
   render(){
     return (
       <ScrollView style={styles.container}>
-        <Swiper style={styles.wrapper} height={133}>
-          <Slider />
-        </Swiper>
+        <Slider />
+        <HomeList />
       </ScrollView>
     );
   }
