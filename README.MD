@@ -6,6 +6,7 @@ React native drop cooperation app. https://aixinchou.shuidihuzhu.com/
 + https://github.com/chenbin92/React-native-example/tree/TabBarExample
 + http://blog.csdn.net/yuanguozhengjust/article/details/50556700
 + http://blog.csdn.net/yayayaya20122012/article/details/51067798
++ http://www.infoq.com/cn/articles/react-native-layout?utm_campaign=infoq_content&
 
 ## change ip solution(Check your hosts file):
 ```objective-c

@@ -11,26 +11,19 @@ import {
   View,
   AlertIOS,
   Image,
+  Dimensions,
   ScrollView
 } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import bannerData from '../../assets/apis/banner-list.json';
+import Slider from '../../components/slider/index';
 import styles from './styles';
 import Swiper from 'react-native-swiper';
 export default class HomeContent extends Component {
   render(){
-    var slides = [];
-    bannerData.data.forEach(function(item,index) {
-      slides.push(
-        <View style={styles.slide} key={index}>
-          <Image style={{ width:375,height:133}} source={{uri: item.imgUrl}}/>
-        </View>
-      );
-    })
     return (
       <ScrollView style={styles.container}>
         <Swiper style={styles.wrapper} height={133}>
-          {slides}
+          <Slider />
         </Swiper>
       </ScrollView>
     );
