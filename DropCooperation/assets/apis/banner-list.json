@@ -1,0 +1,13 @@
+{
+  "code": 0,
+  "msg": "",
+  "data": [{
+    "pos": 1,
+    "link": "http://www.shuidihuzhu.com/site/intro.html",
+    "imgUrl": "http://static-59729941.mtmssdn0.com/img/app-banner.png"
+  }, {
+    "pos": 2,
+    "link": "http://www.shuidihuzhu.com/site/myPlan/invite.html",
+    "imgUrl": "https://static-59729941.mtmss.com/img/banner/invite-bannel-app.png"
+  }]
+}
