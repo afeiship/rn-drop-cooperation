@@ -22,12 +22,12 @@ export default class HomeList extends Component{
       dataSource: ds.cloneWithRows(listData.data),
     };
   }
-  _row_click(rowData){
+  _rowPress(rowData){
     AlertIOS.alert('tst',JSON.stringify(rowData))
   }
   _renderRow(rowData){
     return (
-      <View style={styles.row} onClick={this._row_click}>
+      <TouchableOpacity style={styles.row}  onPress={()=>this._rowPress(rowData)}>
         <View style={[styles.px10,styles.py10,styles.bd]}>
           <View style={styles.col1}>
             <Image style={{width:64,height:64}} source={{uri:rowData.thumb}} />
@@ -62,7 +62,7 @@ export default class HomeList extends Component{
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+      </TouchableOpacity>
     );
   }
   render(){

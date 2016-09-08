@@ -21,6 +21,10 @@ import styles from './styles';
 
 
 export default class HomeContent extends Component {
+  constructor(inNav){
+    super();
+    console.log(inNav);
+  }
   render(){
     return (
       <ScrollView style={styles.container}>
